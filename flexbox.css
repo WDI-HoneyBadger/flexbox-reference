@@ -22,14 +22,14 @@
 
 /*Lets say that together, the width of the children
 is less than the width of the parent*/
-/*.parent-properties .flex-child{
-  width: 100px;
-  margin: 10px 0;
-}*/
+.parent-properties .flex-child{
+  /*width: 100px;
+  margin: 10px 0;*/
+}
 
 .parent-properties{
   /*JUSTIFY CONTENT - DEFAULT IS FLEX START*/
-  /*justify-content: flex-start;*/
+  justify-content: flex-start;
   /*justify-content: flex-end;*/
   /*justify-content: center;*/
   /*justify-content: space-between;*/
@@ -37,15 +37,15 @@ is less than the width of the parent*/
 }
 
 /*What the height of the children are uneven?*/
-/*.parent-properties > div:nth-of-type(2){
-  height: 200px;
-  padding-top: 50px;
-}*/
+.parent-properties > div:nth-of-type(2){
+  /*height: 200px;
+  padding-top: 50px;*/
+}
 
 .parent-properties{
   /*height: 300px;*/
   /*ALIGN ITEMS - DEFAULT IS STRETCH*/
-  /*align-items: stretch;*/
+  align-items: stretch;
   /*align-items: flex-start;*/
   /*align-items: flex-end;*/
   /*align-items: center;*/
@@ -58,6 +58,7 @@ is less than the width of the parent*/
   /* ORDER - DEFAULT IS 1 */
   /*order: 2;*/
   /*order: -1;*/
+  /*order: 1;*/
 }
 
 /* Lets say we set the width to auto*/
@@ -67,18 +68,18 @@ is less than the width of the parent*/
   flex: 1;*/
 }
 
-/*.first-child{
-  flex: 2;
-}*/
+.first-child{
+  /*flex: 2;*/
+}
 
-/*.last-child{
-  flex: 3;
-}*/
+.last-child{
+  /*flex: 3;*/
+}
 
 /*Lets say one of the children has a different height*/
-/*.middle-child{
-  height: 200px;
-}*/
+.middle-child{
+  /*height: 200px;*/
+}
 
 .first-child{
   /*ALIGN SELF - DEFAULT IS AUTO (WILL ALIGN BASED ON PARENT)*/
