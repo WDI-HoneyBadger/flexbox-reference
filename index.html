@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="flexbox.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Flexbox</h1>
+    <h2>The CSS tool that will make your life 10x easier</h2>
+  </header>
+  <main>
+    <img src="https://cdn.meme.am/cache/instances/folder136/500x/67178136.jpg" />
+    <section>
+      <h3>What is flexbox?</h3>
+      <p>
+        Flexbox is a layout mode that determines the position and the size of elements based on the way they interact with their parent (the container) and their siblings (the other elements).
+      </p>
+      <div class="flex-parent">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+        <div class="flex-child">5</div>
+      </div>
+      <h3>How do we use flexbox?</h3>
+      <p>
+        To start, give the container element a display of flex. This will put all of the container’s child elements within one row.
+      </p>
+      <p>
+        Properties can then be applied to either the parent (the container) or the children (the elements directly under the container)
+      </p>
+    </section>
+    <header>
+      <h2>Parent Properties</h2>
+    </header>
+    <section>
+      <p>
+        Here are some properties that can be applied to the parent component.
+      </p>
+      <div class="list-holder">
+        <ul>
+          <li>
+            <h4>flex-direction</h4>
+            <p>values: row | row-reverse | column | column-reverse</p>
+          </li>
+          <li>
+            <h4>flex-wrap</h4>
+            <p>values: nowrap | wrap | wrap-reverse</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h4>justify-content</h4>
+            <p>values: flex-start | flex-end | center | space-between | space-around</p>
+          </li>
+          <li>
+            <h4>align-items</h4>
+            <p>flex-start | flex-end | center | baseline | stretch</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex-parent parent-properties">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+        <div class="flex-child">5</div>
+      </div>
+    </section>
+    <header>
+      <h2>Child Properties</h2>
+    </header>
+    <section>
+      <p>
+        Here are some properties that can be applied to the child elements.
+      </p>
+      <div class="list-holder">
+        <ul>
+          <li>
+            <h4>order</h4>
+            <p>value: A number representing the order where the child should be. The default is 1.</p>
+          </li>
+          <li>
+            <h4>flex</h4>
+            <p>value: A number representing the size of the element in relation to the other siblings within the container</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h4>align-self</h4>
+            <p>values: auto | flex-start | flex-end | center | stretch</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex-parent">
+        <div class="flex-child child-properties first-child">1</div>
+        <div class="flex-child child-properties middle-child">2</div>
+        <div class="flex-child child-properties last-child">3</div>
+      </div>
+    </section>
+    <header>
+      <h2>Exercise!</h2>
+    </header>
+    <section>
+      <p>
+        Lets play a game! Go to the link below and follow the instructions. Get through as much as possible!
+      </p>
+      <a href="flexboxfroggy.com">Flexbox Froggy</a>
+      <h3>Bonus</h3>
+      <p>
+        There are even more flexbox properties not covered here! Below are some useful links with more information. Try things out and have fun with it!
+      </p>
+      <ul class="links">
+        <li>
+          <a href="http://www.flexboxdefense.com/">Flexbox Defense</a>
+        </li>
+        <li>
+          <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Using CSS Flexible Boxes</a>
+        </li>
+        <li>
+          <a href="https://flukeout.github.io/">CSS Diner (Not flexbox, but still fun)</a>
+        </li>
+      </ul>
+    </section>
+    <img src="http://damien.pobel.fr/images/660x/flexbox-all-the-things.jpg" alt="">
+
+  </main>
+
+</body>
+</html>
