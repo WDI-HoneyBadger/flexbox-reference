@@ -4,55 +4,79 @@
 
 
 .flex-parent{
-  /*display: flex;*/
+  display: flex;
 }
 
+/*FLEX DIRECTION - DEFAULT IS ROW*/
 .parent-properties{
-  /*FLEX DIRECTION - DEFAULT IS ROW*/
-  /*flex-direction: row-reverse;*/
-  /*flex-direction: column;*/
+  /* flex-direction: row-reverse; */
+  flex-direction: column;
   /*flex-direction: column-reverse;*/
-  /*flex-direction: row;*/
+  /* flex-direction: row; */
+}
 
-  /*FLEX WRAP - DEFAULT IS NO WRAP*/
-  /*flex-wrap: wrap;*/
-  /*flex-wrap: wrap-reverse;*/
+
+/*FLEX WRAP - DEFAULT IS NO WRAP*/
+.parent-properties{
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
   /*flex-wrap: nowrap;*/
 }
+
+/* How does flex wrap work when the flex direction is a column? */
+.parent-properties{
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+  /*flex-wrap: nowrap;*/
+}
+
 
 /*Lets say that together, the width of the children
 is less than the width of the parent*/
 .parent-properties .flex-child{
-  /*width: 100px;
-  margin: 10px 0;*/
+  /* width: 100px;
+  height: 100px;
+  margin: 0px; */
 }
 
+
+/*JUSTIFY CONTENT - DEFAULT IS FLEX START*/
 .parent-properties{
-  /*JUSTIFY CONTENT - DEFAULT IS FLEX START*/
-  justify-content: flex-start;
-  /*justify-content: flex-end;*/
-  /*justify-content: center;*/
-  /*justify-content: space-between;*/
-  /*justify-content: space-around;*/
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: flex-start; */
+}
+
+/* How does justify content look when the flex direction is column? */
+.parent-properties{
+  /* flex-direction: column; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: flex-start; */
 }
 
 /*What the height of the children are uneven?*/
 .parent-properties > div:nth-of-type(2){
-  /*height: 200px;
-  padding-top: 50px;*/
+  /* height: 200px;
+  padding-top: 50px; */
 }
 
 .parent-properties{
   /*height: 300px;*/
   /*ALIGN ITEMS - DEFAULT IS STRETCH*/
-  align-items: stretch;
-  /*align-items: flex-start;*/
-  /*align-items: flex-end;*/
-  /*align-items: center;*/
-  /*align-items: baseline;*/
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* align-items: baseline; */
+  /* align-items: stretch; */
 }
 
-
+/* /////////////////////////////////////////////////////////////////////// */
 
 .middle-child{
   /* ORDER - DEFAULT IS 1 */
@@ -83,9 +107,9 @@ is less than the width of the parent*/
 
 .first-child{
   /*ALIGN SELF - DEFAULT IS AUTO (WILL ALIGN BASED ON PARENT)*/
-  /*align-self: auto;*/
   /*align-self: flex-start;*/
   /*align-self: flex-end;*/
   /*align-self: center;*/
   /*align-self: stretch;*/
+  /*align-self: auto;*/
 }
